@@ -45,7 +45,7 @@ To get started working on this project, please see our wiki: https://github.com/
 
 ### Associated Projects
 
-To see the Swift/Vapor back-end for the oneleif website, please see the following repository: https://github.com/oneleif/olWebsite
+To see the Swift/Vapor back-end for the oneleif website, please see the following repository: https://github.com/oneleif/VaporWebsite
 
 To see the oneleif iOS app please see the following repository: https://github.com/oneleif/olGO
 
