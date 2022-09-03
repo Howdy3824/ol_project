@@ -1,0 +1,17 @@
+name: Branch Lint
+
+on:
+  push:
+    branches: [ master, develop ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: lekterable/branchlint-action@v1.0.0
+      with:
+        allowed: /(master|develop|(((release)\/(v)?(?:([0-9](\.)?)+)?|(feature|bugfix|support)\/([a-zA-Z0-9_-]+)))|(dependabot)\/[a-zA-Z_-]+\/[a-zA-Z0-9_\-\.]+)/
